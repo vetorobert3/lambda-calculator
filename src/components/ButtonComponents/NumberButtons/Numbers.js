@@ -1,14 +1,16 @@
 import React from "react";
 
 //import any components needed
-// example of import from data.js. Note all the ../   This is how we move through folders. 
-/* 
-import { numbers } from '../../../data' 
+// example of import from data.js. Note all the ../   This is how we move through folders.
+/*
+import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
+import { numbers } from './data.js'
 
 const Numbers = () => {
   // STEP 2 - add the imported data to state
+  const [numsState, setNumsState] = useState(numbers);
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
