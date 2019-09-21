@@ -8,4 +8,9 @@ import { numbers } from './data.js'
 import { operators } from './data.js'
 import { specials } from './data.js'
 
+//wrappers
+const [numsState, setNumsState] = useState(numbers);
+const [opsState, setOpsState] = useState(operators);
+const [splsState, setSplsState] = useState(specials);
+
 ReactDOM.render(<App />, document.getElementById("root"));
